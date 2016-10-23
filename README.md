@@ -1,14 +1,15 @@
 # Convolutional Pose Machines
 Shih-En Wei, Varun Ramakrishna, Takeo Kanade, Yaser Sheikh, "[Convolutional Pose Machines](http://arxiv.org/abs/1602.00134)", CVPR 2016.
 
-This project is licensed under the terms of the GPL v2 license. By using the software, you are agreeing to the terms of the [license agreement](https://github.com/shihenw/convolutional-pose-machines-release/blob/master/LICENSE.md).
-
-Contact: Shih-En Wei (weisteady@gmail.com)
-
 ## Before Everything
-- Watch some [videos](https://www.youtube.com/playlist?list=PLNh5A7HtLRcpsMfvyG0DED-Dr4zW5Lpcg).
 - Install [Caffe](http://caffe.berkeleyvision.org/). If you are interested in training this model on your own machines, consider using [our version](https://github.com/shihenw/caffe) with a data layer performing online augmentation. Make sure you have done `make matcaffe` and `make pycaffe`.
+
+
+- cmake . -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=c++ -DBLAS=mkl
+
+
 - Copy `caffePath.cfg.example` to `caffePath.cfg` and set your own path in it.
+
 
 ## Testing
 
